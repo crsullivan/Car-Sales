@@ -1,11 +1,15 @@
 import React from 'react';
-
+import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import {Reducer} from './reducer';
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
 const App = () => {
+  const store = createStore(Reducer);
   const state = {
     additionalPrice: 0,
     car: {
@@ -15,7 +19,7 @@ const App = () => {
         'https://cdn.motor1.com/images/mgl/0AN2V/s1/2019-ford-mustang-bullitt.jpg',
       features: []
     },
-    additionalFeatures: [
+    store: [
       { id: 1, name: 'V-6 engine', price: 1500 },
       { id: 2, name: 'Racing detail package', price: 1500 },
       { id: 3, name: 'Premium sound system', price: 500 },
