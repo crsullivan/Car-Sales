@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
 
 const Header = props => {
@@ -13,6 +13,6 @@ const Header = props => {
     </>
   );
 };
-
-export default connect()(Header);
+export default Header
+// export default connect()(Header);
 

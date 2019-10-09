@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
 
 const Total = props => {
@@ -9,6 +9,6 @@ const Total = props => {
     </div>
   );
 };
-
-export default connect()(Total);
+export default Total
+// export default connect()(Total);
 
