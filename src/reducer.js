@@ -1,7 +1,7 @@
 import { REMOVE_FEATURE, BUY_ITEM, ADD_FEATURE} from './actions'
 const initialState = {
     
-        additionalprice: 0,
+        additionalPrice: 0,
         car: {
           price: 26395,
           name: '2019 Ford Mustang',
